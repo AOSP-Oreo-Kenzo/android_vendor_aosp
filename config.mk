@@ -37,6 +37,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Don't compile SystemUITests
 EXCLUDE_SYSTEMUI_TESTS := true
 
+# init.d script support
+PRODUCT_COPY_FILES += \
+    vendor/aosp/prebuilt/bin/sysinit:system/bin/sysinit
+
+# init file
+PRODUCT_COPY_FILES += \
+    vendor/aosp/prebuilt/etc/init.custom.rc:root/init.custom.rc
+
 # Version
 CUSTOM_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d)-mod
 

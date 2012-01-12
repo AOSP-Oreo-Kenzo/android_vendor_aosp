@@ -45,6 +45,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/aosp/prebuilt/etc/init.custom.rc:root/init.custom.rc
 
+# Camera Effects
+PRODUCT_COPY_FILES +=  \
+    vendor/aosp/prebuilt/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
+    vendor/aosp/prebuilt/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
+
 # Version
 CUSTOM_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d)-mod
 

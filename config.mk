@@ -3,7 +3,8 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/common
 
 # Include explicitly to work around GMS issues
 PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full
+    libprotobuf-cpp-full \
+    librsjni
 
 # Telephony packages
 PRODUCT_PACKAGES += \

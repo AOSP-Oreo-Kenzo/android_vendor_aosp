@@ -50,6 +50,9 @@ PRODUCT_COPY_FILES +=  \
     vendor/aosp/prebuilt/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
     vendor/aosp/prebuilt/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
 
+# Bootanimation
+PRODUCT_COPY_FILES += vendor/aosp/prebuilt/media/bootanimation.zip:system/media/bootanimation.zip
+
 # Version
 CUSTOM_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d)-mod
 

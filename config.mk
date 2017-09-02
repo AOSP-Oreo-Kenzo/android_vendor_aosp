@@ -60,6 +60,9 @@ PRODUCT_COPY_FILES += vendor/aosp/prebuilt/media/bootanimation.zip:system/media/
 # World APN list
 PRODUCT_COPY_FILES += vendor/aosp/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
 
+# World SPN overrides list
+PRODUCT_COPY_FILES += vendor/aosp/prebuilt/etc/spn-conf.xml:system/etc/spn-conf.xml
+
 # Set Pixel blue light theme on Gboard
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.ime.theme_id=5

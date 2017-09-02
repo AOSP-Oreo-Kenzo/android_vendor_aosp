@@ -69,4 +69,3 @@ CUSTOM_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d)-mod
 
 $(call inherit-product-if-exists, vendor/aosp/prebuilt/prebuilt.mk)
 $(call inherit-product-if-exists, vendor/gapps/gapps.mk)
-$(call inherit-product-if-exists, vendor/aosp/sepolicy/sepolicy.mk)

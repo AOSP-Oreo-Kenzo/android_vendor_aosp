@@ -38,6 +38,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
 
+# Other properties
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.disable_rescue=true
+
 # Don't compile SystemUITests
 EXCLUDE_SYSTEMUI_TESTS := true
 

@@ -67,6 +67,12 @@ PRODUCT_COPY_FILES += vendor/aosp/prebuilt/etc/apns-conf.xml:system/etc/apns-con
 # World SPN overrides list
 PRODUCT_COPY_FILES += vendor/aosp/prebuilt/etc/spn-conf.xml:system/etc/spn-conf.xml
 
+# Backup Tool
+PRODUCT_COPY_FILES += \
+    vendor/aosp/prebuilt/addon.d/50-aosp.sh:system/addon.d/50-aosp.sh \
+    vendor/aosp/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/aosp/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions
+
 # Set Pixel blue light theme on Gboard
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.ime.theme_id=5
